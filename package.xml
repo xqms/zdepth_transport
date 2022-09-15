@@ -1,0 +1,17 @@
+<package format="3">
+    <name>zdepth_transport</name>
+    <description>Compresses 16-bit depth images using the Zdepth library</description>
+    <version>0.0.1</version>
+    <license>BSD</license>
+    <maintainer email="max.schwarz@ais.uni-bonn.de">Max Schwarz</maintainer>
+
+    <buildtool_depend>catkin</buildtool_depend>
+    <depend>roscpp</depend>
+    <depend>image_transport</depend>
+    <depend>sensor_msgs</depend>
+    <depend>rosfmt</depend>
+
+    <export>
+        <image_transport plugin="${prefix}/plugins.xml" />
+    </export>
+</package>

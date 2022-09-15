@@ -1,0 +1,12 @@
+<library path="lib/libzdepth_transport">
+  <class name="image_transport/zdepth_pub" type="zdepth_transport::Publisher" base_class_type="image_transport::PublisherPlugin">
+    <description>
+    </description>
+  </class>
+
+  <!--<class name="image_transport/theora_sub" type="theora_image_transport::TheoraSubscriber" base_class_type="image_transport::SubscriberPlugin">
+    <description>
+      This plugin decodes a video packet stream encoded using Theora.
+    </description>
+  </class> -->
+</library>
