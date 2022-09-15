@@ -2,7 +2,7 @@
     <name>zdepth_transport</name>
     <description>Compresses 16-bit depth images using the Zdepth library</description>
     <version>0.0.1</version>
-    <license>BSD</license>
+    <license>MIT</license>
     <maintainer email="max.schwarz@ais.uni-bonn.de">Max Schwarz</maintainer>
 
     <buildtool_depend>catkin</buildtool_depend>
