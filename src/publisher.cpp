@@ -50,7 +50,7 @@ void Publisher::publish(const sensor_msgs::Image& message, const PublishFn& publ
     auto ret = m_compressor->Compress(message.width, message.height, data, out->data, true);
     if(ret != zdepth::DepthResult::Success)
     {
-        ROSFMT_WARN_THROTTLE(1.0, "Could not encode depth image");
+        ROSFMT_WARN_THROTTLE(1.0, "Could not encode depth image: {}", ret);
         return;
     }
 

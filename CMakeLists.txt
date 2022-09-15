@@ -24,6 +24,7 @@ FetchContent_MakeAvailable(zdepth)
 
 add_library(zdepth_transport
     src/publisher.cpp
+    src/subscriber.cpp
 )
 target_include_directories(zdepth_transport PRIVATE
     ${catkin_INCLUDE_DIRS}
@@ -34,7 +35,7 @@ target_link_libraries(zdepth_transport
 )
 
 install(TARGETS zdepth_transport
-    LIBRARY DESTINATION ${CATKIN_PACKAGE_LIBRARY_DESTINATION}
+    LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 )
 install(FILES plugins.xml
     DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
